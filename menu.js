@@ -301,3 +301,39 @@ document.addEventListener("keydown", (evento) => {
    ========================================= */
 
 cargarPracticas();
+
+/* =========================================
+   CERRAR SESIÓN
+   ========================================= */
+
+const btnCerrarSesion = document.getElementById("btnCerrarSesion");
+
+if (btnCerrarSesion) {
+    btnCerrarSesion.addEventListener("click", async () => {
+        btnCerrarSesion.disabled = true;
+        btnCerrarSesion.textContent = "CERRANDO...";
+
+        try {
+            const respuesta = await fetch("/api/logout", {
+                method: "POST"
+            });
+
+            const datos = await respuesta.json().catch(() => ({}));
+
+            if (!respuesta.ok) {
+    const detalle = await respuesta.text();
+    throw new Error(
+        `Error ${respuesta.status}: ${detalle || "No se pudo cerrar la sesión."}`
+    );
+}
+
+            window.location.href = datos.redireccion || "/login.html";
+
+        } catch (error) {
+            btnCerrarSesion.disabled = false;
+            btnCerrarSesion.textContent = "↪ CERRAR SESIÓN";
+
+            alert(error.message || "Ocurrió un error al cerrar sesión.");
+        }
+    });
+}

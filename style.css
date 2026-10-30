@@ -977,3 +977,43 @@ input:focus-visible,
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Acciones del encabezado */
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.btn-logout {
+    border: 1px solid rgba(0, 229, 255, 0.45);
+    background: rgba(0, 229, 255, 0.06);
+    color: #00e5ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-logout:hover {
+    background: rgba(0, 229, 255, 0.14);
+    border-color: #00e5ff;
+    box-shadow: 0 0 14px rgba(0, 229, 255, 0.18);
+}
+
+@media (max-width: 600px) {
+    .topbar-actions {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .btn-logout {
+        padding: 8px 10px;
+        font-size: 0.65rem;
+    }
+}
