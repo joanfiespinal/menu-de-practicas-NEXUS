@@ -1,0 +1,14 @@
+
+# Credenciales y configuración privada
+.env
+.env.*
+
+# Base de datos local
+nexus.db
+
+# Dependencias de Node.js
+node_modules/
+
+# Registros
+*.log
+npm-debug.log*

@@ -1,0 +1,157 @@
+
+[
+  {
+    "numero": "00",
+    "titulo": "Arquitectura Web",
+    "descripcion": "Opinión y fundamentos sobre la arquitectura web, sus componentes y tecnologías principales.",
+    "categoria": "web",
+    "etiqueta": "FUNDAMENTOS",
+    "icono": "⌘",
+    "color": "cyan",
+    "tecnologias": ["Arquitectura", "Cliente-servidor"],
+    "enlace": "https://github.com/joanfiespinal/Opini-n-sobre-el-material-de-estudio-de-Arquitectura-de-Aplicaciones-Web"
+  },
+  {
+    "numero": "01",
+    "titulo": "Página Personal",
+    "descripcion": "Desarrollo de una página web personal utilizando la estructura básica de HTML.",
+    "categoria": "html",
+    "etiqueta": "HTML",
+    "icono": "⌘",
+    "color": "cyan",
+    "tecnologias": ["HTML", "Estructura web"],
+    "enlace": "https://joanfiespinal.github.io/pagina-personal/"
+  },
+  {
+    "numero": "02.1",
+    "titulo": "Biografía y Horario",
+    "descripcion": "Página con información biográfica y horario de clases organizado mediante una tabla.",
+    "categoria": "html",
+    "etiqueta": "HTML",
+    "icono": "▤",
+    "color": "purple",
+    "tecnologias": ["HTML", "Tablas"],
+    "enlace": "https://joanfiespinal.github.io/Pagina-Biografia/"
+  },
+  {
+    "numero": "02.2",
+    "titulo": "102 Etiquetas HTML",
+    "descripcion": "Página demostrativa para explorar etiquetas y elementos del lenguaje HTML.",
+    "categoria": "html",
+    "etiqueta": "HTML",
+    "icono": "</>",
+    "color": "green",
+    "tecnologias": ["HTML", "Etiquetas"],
+    "enlace": "https://joanfiespinal.github.io/102-Etiquetas/"
+  },
+  {
+    "numero": "03",
+    "titulo": "Diseño Web Banco XX",
+    "descripcion": "Interfaz bancaria con estructura de navegación y estilos inspirados en una entidad financiera.",
+    "categoria": "html",
+    "etiqueta": "HTML / CSS",
+    "icono": "▣",
+    "color": "cyan",
+    "tecnologias": ["HTML5", "CSS"],
+    "enlace": "https://joanfiespinal.github.io/BANCO-JOANFI/"
+  },
+  {
+    "numero": "04",
+    "titulo": "Menú Dinámico",
+    "descripcion": "Construcción de un menú cuyos elementos se organizan mediante datos estructurados.",
+    "categoria": "web",
+    "etiqueta": "DESARROLLO WEB",
+    "icono": "☷",
+    "color": "purple",
+    "tecnologias": ["JSON", "XML", "JavaScript"],
+    "enlace": "https://joanfiespinal.github.io/menu-dinamico/"
+  },
+  {
+    "numero": "05.1",
+    "titulo": "Pruebas con Playwright",
+    "descripcion": "Automatización de pruebas para comprobar el funcionamiento de una aplicación web.",
+    "categoria": "web",
+    "etiqueta": "TESTING",
+    "icono": "✓",
+    "color": "green",
+    "tecnologias": ["Playwright", "JavaScript"],
+    "enlace": "https://joanfiespinal.github.io/poketest-playwright/"
+  },
+  {
+    "numero": "05.2",
+    "titulo": "Pruebas BDD con Gherkin",
+    "descripcion": "Descripción de escenarios de prueba utilizando el enfoque de comportamiento esperado.",
+    "categoria": "web",
+    "etiqueta": "TESTING",
+    "icono": "◇",
+    "color": "purple",
+    "tecnologias": ["BDD", "Gherkin"],
+    "enlace": "https://joanfiespinal.github.io/comprafacil-bdd/"
+  },
+  {
+    "numero": "05.3",
+    "titulo": "Pruebas de Rendimiento",
+    "descripcion": "Evaluación del rendimiento de una aplicación mediante pruebas de carga y métricas.",
+    "categoria": "web",
+    "etiqueta": "PERFORMANCE",
+    "icono": "ϟ",
+    "color": "cyan",
+    "tecnologias": ["k6", "Rendimiento"],
+    "enlace": "https://github.com/joanfiespinal/practica-5-3-performance"
+  },
+  {
+    "numero": "06",
+    "titulo": "XML, JSON y AJAX",
+    "descripcion": "Resumen y ejemplos sobre XML y JSON, junto con el uso de AJAX para intercambiar datos.",
+    "categoria": "datos",
+    "etiqueta": "INTERCAMBIO DE DATOS",
+    "icono": "{ }",
+    "color": "green",
+    "tecnologias": ["XML", "JSON", "AJAX"],
+    "enlace": "https://github.com/joanfiespinal/Resumen-Pr-ctica-6-XML-y-JSON"
+  },
+  {
+    "numero": "07",
+    "titulo": "Formulario con Base de Datos",
+    "descripcion": "Gestión de estudiantes mediante un formulario con operaciones de inserción, consulta, modificación y eliminación.",
+    "categoria": "datos",
+    "etiqueta": "BASE DE DATOS",
+    "icono": "▤",
+    "color": "cyan",
+    "tecnologias": ["Node.js", "SQLite", "CRUD"],
+    "enlace": "https://joanfiespinal.github.io/gestion-estudiantes/"
+  },
+  {
+    "numero": "08",
+    "titulo": "Arquitectura MVC",
+    "descripcion": "Estudio del patrón Modelo-Vista-Controlador y su aplicación al desarrollo web moderno.",
+    "categoria": "web",
+    "etiqueta": "ARQUITECTURA",
+    "icono": "⬡",
+    "color": "purple",
+    "tecnologias": ["Modelo", "Vista", "Controlador"],
+    "enlace": "https://github.com/joanfiespinal/MVC-en-el-desarrollo-web-moderno-origen-evoluci-n-y-uso-actual-en-aplicaciones-web"
+  },
+  {
+    "numero": "09",
+    "titulo": "Validador de Cédula",
+    "descripcion": "Validación del formato y del dígito de control de una cédula dominicana mediante el algoritmo correspondiente.",
+    "categoria": "datos",
+    "etiqueta": "VALIDACIÓN",
+    "icono": "✓",
+    "color": "green",
+    "tecnologias": ["JavaScript", "Algoritmo módulo 10"],
+    "enlace": "https://joanfiespinal.github.io/Validador-de-cedula-de-identidad-y-electoral/"
+  },
+  {
+    "numero": "10",
+    "titulo": "Spring Framework",
+    "descripcion": "Investigación sobre las funcionalidades y características principales del framework Spring.",
+    "categoria": "web",
+    "etiqueta": "FRAMEWORK",
+    "icono": "❖",
+    "color": "green",
+    "tecnologias": ["Java", "Spring Framework"],
+    "enlace": "https://github.com/joanfiespinal/Spring-Framework---Describir-las-funcionalidades-de-este-Framework"
+  }
+]

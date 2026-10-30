@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070a12">
+
+    <title>Lab Lenguaje Programacion III | NEXUS</title>
+
+    <meta
+        name="description"
+        content="Proyecto integrador de Laboratorio de Lenguaje de Programación III."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fondo futurista -->
+    <div class="background-effects">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="Inicio de NEXUS">
+            <div class="brand-icon">N</div>
+            <div class="brand-text">
+                <strong>NEXUS</strong>
+                <span>Lab.</span>
+            </div>
+        </a>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            SISTEMA EN LÍNEA
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Presentación -->
+        <section class="hero">
+            <div class="hero-label">
+                <span class="label-line"></span>
+                PROYECTO INTEGRADOR
+                <span class="label-line"></span>
+            </div>
+
+            <h1>
+                Lab Lenguaje<br>
+                <span class="gradient-text">Programacion lll</span>
+            </h1>
+
+            <p class="professor">
+                <span class="info-icon">◈</span>
+                Radhames Silverio Gonzalez --
+                Marlenis Concepcion
+            </p>
+
+            <p class="course-code">INF5170-1</p>
+
+            <p class="hero-description">
+                Un espacio digital para organizar, ejecutar y presentar
+                las prácticas de laboratorio en un solo lugar.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#practicas" class="btn-primary">
+                    <span>⟶</span>
+                    EXPLORAR PRÁCTICAS
+                </a>
+
+                <div class="practice-counter">
+                    <strong id="totalPracticas">14</strong>
+                    <span>PRÁCTICAS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel de prácticas -->
+        <section class="missions" id="practicas">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">CENTRO DE CONTROL</p>
+                    <h2>Panel de practicas<span>.</span></h2>
+                    <p class="section-description">
+                        Selecciona una práctica para consultar sus detalles.
+                    </p>
+                </div>
+
+                <div class="mission-number">
+                    <span class="status-dot"></span>
+                    PRÁCTICAS 00–10
+                </div>
+            </div>
+
+            <!-- Buscador -->
+            <div class="toolbar">
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+                    <input
+                        type="search"
+                        id="buscarPractica"
+                        placeholder="Buscar práctica, tema o tecnología..."
+                        aria-label="Buscar prácticas"
+                    >
+                    <span class="search-shortcut">SEARCH</span>
+                </div>
+
+                <div class="filter-buttons" aria-label="Filtrar prácticas">
+                    <button class="filter-btn active" data-filter="todas">
+                        TODAS
+                    </button>
+                    <button class="filter-btn" data-filter="html">
+                        HTML / CSS
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        DESARROLLO WEB
+                    </button>
+                    <button class="filter-btn" data-filter="datos">
+                        DATOS
+                    </button>
+                </div>
+            </div>
+
+            <!-- Las tarjetas se generan desde menu.json -->
+            <div class="practice-grid" id="listaPracticas">
+                <div class="loading-card">
+                    <div class="loader"></div>
+                    <p>INICIALIZANDO MÓDULOS...</p>
+                </div>
+            </div>
+
+            <p class="results-info" id="resultados">
+                Cargando módulos del sistema...
+            </p>
+        </section>
+
+        <!-- Información del proyecto -->
+        <section class="system-panel">
+            <div class="system-panel-icon">⌘</div>
+            <div class="system-panel-content">
+                <p class="section-kicker">ESTADO DEL PROYECTO</p>
+                <h3>Un solo entorno. Catorce actividades.</h3>
+                <p>
+                    Este panel integra las actividades del laboratorio,
+                    con acceso organizado a las páginas publicadas y los
+                    repositorios de cada práctica.
+                </p>
+            </div>
+            <div class="system-panel-tag">
+                <span class="status-dot"></span>
+                NEXUS v1.0
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Ventana de detalles -->
+    <div
+        class="modal"
+        id="modalPractica"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitulo"
+        hidden
+    >
+        <div class="modal-backdrop" id="cerrarFondo"></div>
+
+        <div class="modal-content">
+            <button
+                class="modal-close"
+                id="cerrarModal"
+                aria-label="Cerrar ventana"
+            >×</button>
+
+            <p class="section-kicker" id="modalNumero">MÓDULO</p>
+            <h2 id="modalTitulo">Nombre de la práctica</h2>
+            <p id="modalDescripcion"></p>
+
+            <div class="modal-meta">
+                <span id="modalCategoria"></span>
+                <span id="modalEstado"></span>
+            </div>
+
+            <a
+                id="modalEnlace"
+                class="btn-primary modal-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                hidden
+            >
+                ABRIR PRÁCTICA ↗
+            </a>
+
+            <p class="modal-note">
+                Los enlaces se habilitarán según los recursos disponibles
+                para cada práctica.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            <span class="footer-brand">NEXUS</span>
+            // LAB LENGUAJE PROGRAMACION III
+        </p>
+        <p>INF5170-1 · PROYECTO ACADÉMICO</p>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
